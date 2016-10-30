@@ -1,7 +1,10 @@
-# bourn
+[![JavaScript Standard Style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
+
+# Bourn
+
 Module making it easy to work with events and other async concepts.
 
-## todo
+## Todo
 
 * write documentation
 * write more tests to have full coverage
@@ -9,11 +12,11 @@ Module making it easy to work with events and other async concepts.
   * Add error handling
   * Cleanup code
 
-## contribute
+## Contribute
 
 Feel free to submit pull requests.
 
-## examples
+## Examples
 
 * If both events are fired while the condition was true, an action is performed:
 
@@ -35,7 +38,7 @@ await Bourn()
   .toAsync()
 ```
 
-* Await until an async function is executed and event is fired
+* Await until an async function is executed and event is fired:
 
 ```js
 await Bourn()
@@ -45,7 +48,7 @@ await Bourn()
   .toAsync()
 ```
 
-* clock that ticks every second with alarm after 5 seconds
+* clock that ticks every second with alarm after 5 seconds:
 
 ```js
 await Bourn()
@@ -55,7 +58,7 @@ await Bourn()
   .toFunction(() => alarm())
 ```
 
-* writes value to console
+* writes value to console:
 
 ```js
 await Bourn()
@@ -63,7 +66,7 @@ await Bourn()
   .toFunction((v) => console.log(v))
 ```
 
-* writes each value of the array as separate lines to console
+* writes each value of the array as separate lines to console:
 
 ```js
 await Bourn()
